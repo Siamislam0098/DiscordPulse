@@ -1,0 +1,23 @@
+name: discordpresence
+description: $description
+version: '${version}'
+
+main: org.bingo.discordpresence.Discordpresence
+api-version: '1.21.11'
+load: POSTWORLD
+
+authors: [ BingoGames ]
+
+commands:
+  discordpresence:
+    description: Manage the DiscordPresence plugin.
+    usage: /<command> <reload|status>
+    aliases: [dp]
+
+permissions:
+  discordpresence.reload:
+    description: Allows reloading the DiscordPresence config.
+    default: op
+  discordpresence.status:
+    description: Allows viewing the DiscordPresence bot status.
+    default: op
